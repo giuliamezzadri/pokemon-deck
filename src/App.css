@@ -1,8 +1,4 @@
 body {
-  margin: 1;
-}
-
-#root {
-  max-width: none;
-  margin: 1;
+  background-color: white;
+  color: black;
 }
