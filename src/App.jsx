@@ -66,7 +66,7 @@ function App() {
 
   return (
     <>
-      <h1 style={{ marginBottom: "15px" }}>
+      <h1 style={{ marginBottom: "15px", color: "black" }}>
         Poké<strong>deck</strong>
       </h1>
       <p style={{ marginBottom: "15px", fontSize: "15px" }}>
@@ -79,7 +79,7 @@ function App() {
       >
         <input
           type="text"
-          placeholder="Type Pokémon name..."
+          placeholder="Type Pokémon"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           style={{
@@ -87,6 +87,8 @@ function App() {
             padding: "8px",
             borderRadius: "5px",
             border: "1px solid #ccc",
+            backgroundColor: "white",
+            color: "black",
           }}
         />
         <select
@@ -96,6 +98,8 @@ function App() {
             padding: "8px",
             borderRadius: "5px",
             border: "1px solid #ccc",
+            backgroundColor: "white",
+            color: "black",
           }}
         >
           <option value="id">Sort by: #ID</option>
@@ -115,6 +119,7 @@ function App() {
               backgroundColor: selectedType === type ? "#ccc" : "#eee",
               border: "none",
               borderRadius: "5px",
+              color: "black",
             }}
           >
             {type}
@@ -174,10 +179,11 @@ function App() {
             {/* Name */}
             <h2
               style={{
-                fontSize: "16px",
+                fontSize: "17px",
                 fontWeight: "600",
                 margin: "5px 0",
                 textAlign: "center",
+                color: "black",
               }}
             >
               {pokemon.name}
